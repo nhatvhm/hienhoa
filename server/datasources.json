@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "abssolutiondb": {
+    "host": "ds155160.mlab.com",
+    "port": 55160,
+    "url": "mongodb://abssolution:BlueChip99@ds155160.mlab.com:55160/abssolution",
+    "database": "abssolution",
+    "password": "BlueChip99",
+    "name": "abssolutiondb",
+    "user": "abssolution",
+    "connector": "mongodb"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Product",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ProductName": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "string",
+      "required": true
+    },
+    "Stock": {
+      "type": "number",
+      "required": true
+    },
+    "Price": {
+      "type": "number",
+      "required": true
+    },
+    "ImageSource": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "carts": {
+      "type": "hasMany",
+      "model": "Cart",
+      "foreignKey": ""
+    },
+    "category": {
+      "type": "belongsTo",
+      "model": "Category",
+      "foreignKey": "CategoryID"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

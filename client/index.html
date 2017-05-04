@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>HIEN HOA Co.,LTD</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- css font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <!-- CSS -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+  <!-- favico -->
+  <link rel="icon" href="images/hienhoa-ico.ico">
+
+  <script src="https://code.angularjs.org/1.6.4/angular.js"></script>
+  <script src="https://code.angularjs.org/1.6.4/angular-resource.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+</head>
+<body ng-app="app" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="images/hienhoa.png"/>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="jumbotron text-center">
+  <h1>HIEN HOA CO.,LTD</h1> 
+  <p>Nodejs better, Golang faster</p> 
+  <form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input id="username" type="text" class="form-control" name="username" value="" placeholder="Username">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+    </div>
+    <br>
+    <button type="button" onclick="LoginSubmit(this)" class="btn btn-danger">LOGIN</button>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Boutique Outsourcing</h2><br>
+      <h4>Our leadership team has over many years combined experience in the digital agency world. We've delivered great experiences small clients alike.<br>
+      We like to believe that we have the "secret recipe" to continue delivering exceptional work for your team, it goes a little like this:</h4><br>
+      <p><span class="glyphicon glyphicon-tag"></span> Quality is in our DNA. Hire the best</p>
+      <p><span class="glyphicon glyphicon-tag"></span> Communication is key! Clear, Concise & Timely</p>
+      <p><span class="glyphicon glyphicon-tag"></span> Full transparency, trust is everything</p>
+      <p><span class="glyphicon glyphicon-tag"></span> Strong process, just enough but not too much</p>
+    </div>
+    <div class="col-sm-6">
+      <img src="images/responsive.jpg" style="max-width: 100%;"/>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center bg-grey">
+  <h2>SERVICES</h2>
+  <h4>HERE IS A SMALL LIST OF OUR SERVICES</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-cog logo-small"></span>
+      <h4>HTML/CSS</h4>
+      <p>HTML5, CSS3, SASS, Grunt and Bower</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-pencil logo-small"></span>
+      <h4>JAVASCRIPT</h4>
+      <p>Javascript, jQuery, AngularJS and ReactJS</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-phone logo-small"></span>
+      <h4>MOBILE</h4>
+      <p>jQuery Mobile, Ionic, PhoneGap/Cordova, and Bootstrap</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-link logo-small"></span>
+      <h4>SOCIAL</h4>
+      <p>Facebook Apps & API, Twitter API and Google+ API</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-modal-window logo-small"></span>
+      <h4>UI/UX</h4>
+      <p>Responsive, PSD to HTML/CSS, wireframes for mobile (iOS/Android)/Desktop</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4>BACKEND</h4>
+      <p>Java, Nodejs and Go</p>
+    </div>
+  </div>
+</div>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <h2>OUR MISSIONS</h2>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>We work on highly complex frontend systems and layouts, <br>using cutting edge tools to deliver highly maintainable and optimized sites.</h4>
+      </div>
+      <div class="item">
+        <h4>We love pushing the envelope of modern web development and working with complex applications <br>and animations (independant and timeline based) is front and center of what we do.</h4>
+      </div>
+      <div class="item">
+        <h4>We understand the core ideas behind "mobile first" and how to implement them using today's mobile libraries, <br> frameworks, and responsive web frameworks.</h4>
+      </div>
+      <div class="item">
+        <h4>Social applications abound and the data they contain can be invaluable. <br>We have experience in developing for them and using the data they expose through their API's.</h4>
+      </div>
+      <div class="item">
+        <h4>We have experience in developing and maintaining open source CMS.</h4>
+      </div>
+      <div class="item">
+        <h4>While our forte is in complex frontend development, our background is in backend application development <br>and we continue to regularly develop and integrate with existing systems.</h4>
+      </div>
+      <div class="item">
+        <h4>Our primary focus is in application development, yet are roots are firmly based in User Experience (UX). <br>Our passion is to build world class digital experiences that deliver exceptional value to both clients and users.</h4>
+      </div>      
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Da Nang, Vietnamese</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +84 0914130399</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> admin@hienhoa.com.vn</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+	  <div class="form-field form-group  ">
+                    <div class="form-label">
+                <label class="inline">
+                                                        Captcha
+                                        <span class="required">*</span>
+                                </label>
+            </div>
+            <div class="form-data" data-grav-field="captcha" data-grav-disabled="true" data-grav-default="null">
+                                        <script>
+        var captchaOnloadCallback = function captchaOnloadCallback() {
+            grecaptcha.render('g-recaptcha', {
+                'sitekey': "6Lea3hEUAAAAAAD0B_dSFw2TyToVnzP6ujacpyiS",
+                'callback': captchaValidatedCallback,
+                'expired-callback': captchaExpiredCallback
+            });
+        };
+
+        var captchaValidatedCallback = function captchaValidatedCallback() {
+
+        };
+
+        var captchaExpiredCallback = function captchaExpiredCallback() {
+            grecaptcha.reset();
+        };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=captchaOnloadCallback&amp;render=explicit&amp;hl=" async="" defer="">
+    </script>
+    <div class="g-recaptcha" id="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6Lea3hEUAAAAAAD0B_dSFw2TyToVnzP6ujacpyiS&amp;co=aHR0cHM6Ly9mbGF0ZmlsZWRldmVsb3Blci5jb206NDQz&amp;hl=en&amp;v=r20170425155801&amp;size=normal&amp;cb=l2alnq8qe6v2" title="recaptcha widget" width="304" height="78" frameborder="0" scrolling="no" name="undefined"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+                                
+            </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(16.0527486,108.2324878);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_yfkV0B-kdQytVJKeI2zZlQHs8BTNfBw&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Copyright &copy; 2017 <a href="https://www.hienhoa.com.vn" title="Visit Hien Hoa DigiTech Co.,Ltd">HIEN HOA DIGITECH Co.,LTD.</a> All rights reserved.</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/bootstrap-notify.min.js"></script>
+<script>
+    NProgress.start();
+    function LoginSubmit(obj){
+        $.HAjaxRequest({
+            url:"/login",
+            type:"post",
+            data:$("#inputZoon").serialize(),
+            dataType:'json',
+            success:function(){
+
+                window.location.href="/HomePage";
+            },
+            error:function(msg){
+                var imsg = JSON.parse(msg.responseText)
+                if (imsg.error_code == 401){
+                    $.Notify({
+                        title:"Tips: ",
+                        message:"The username does not exist. Please check your account for errors",
+                        type:"warning",
+                        placement:{from:"bottom",align:"right"},
+                    })
+                } else if (imsg.error_code==402){
+                    $.Notify({
+                        title:"Tips: ",
+                        message:"The user name does not exist and the user password information can not be obtained in the system",
+                        type:"warning",
+                        placement:{from:"bottom",align:"right"},
+                    })
+                } else if (imsg.error_code==403){
+                    $.Notify({
+                        title:"Tips: ",
+                        message:"Has 6 consecutive wrong password, the user has been locked, please contact the administrator",
+                        type:"warning",
+                        placement:{from:"bottom",align:"right"},
+                    })
+                } else if (imsg.error_code==404){
+                      $.Notify({
+                          title:"Tips: ",
+                          message:"Has 6 consecutive wrong password, the user has been locked, please contact the administrator",
+                          type:"warning",
+                          placement:{from:"bottom",align:"right"},
+                      })
+                  }  else if (imsg.error_code==405){
+                      $.Notify({
+                          title:"Tips: ",
+                          message:"User password input error, such as forget the password, please contact the administrator",
+                          type:"warning",
+                          placement:{from:"bottom",align:"right"},
+                      })
+                  } else if (imsg.error_code==406){
+                      $.Notify({
+                          title:"Tips: ",
+                          message:"The user has been locked, please contact the administrator",
+                          type:"warning",
+                          placement:{from:"bottom",align:"right"},
+                      })
+                  }
+              }
+          });
+
+    };
+
+    $(document).keydown(function(e){
+        if (e.keyCode == '13'){
+            setTimeout(LoginSubmit,200)
+        }
+    });
+
+</script>
+</body>
+</html>
